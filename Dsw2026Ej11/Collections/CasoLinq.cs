@@ -20,6 +20,15 @@ public class CasoLinq
 {
     private List<Libro> libros; 
 
+    public CasoLinq()
+    {
+        libros = new List<Libro>();
+
+        libros.Add(new Libro(1, "Harry Potter", 15000));
+        libros.Add(new Libro(20, "El Principito", 12000));
+        libros.Add(new Libro(30, "Cien Años de Soledad", 18000)); 
+    }
+
 
     public Libro GetPrimero()
     {
